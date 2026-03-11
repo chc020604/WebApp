@@ -1,4 +1,4 @@
-* 2주차
+# 2주차 수업 내용
 * roadmap.sh 개발자 로드맵 사이트
 * hyper test markup language
 * 메타 데이터(Meta Data): 특정 데이터에 대해 설명하는 데이터
