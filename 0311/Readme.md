@@ -34,8 +34,8 @@
 
 * 리액트 프로젝트를 만들기 위해 vite또는 Create React App(CRA)를 사용할 수 있다.
 
-```
 # Create React App (CRA)로 설치
+```
 npx create-react-app my-react-app3 --use-npm
 cd my-react-app3
 npm start
