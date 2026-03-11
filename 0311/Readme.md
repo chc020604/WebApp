@@ -40,3 +40,26 @@ npx create-react-app my-react-app3 --use-npm
 cd my-react-app3
 npm start
 ```
+
+* JSX 기본구조는 반드시 하나의 부모 요소로 감싸야한다 (빈 태그로라도 묶어 줘야하고 2개 이상의 태그를 리턴하려고 할때 다른 태그로 묶여 있지 않으면 에러가 뜬다.)
+
+### 문제가 되는 방식
+```
+function App() {
+    return (
+        <h1>Hello, JSX!</h1>
+        <p>React에서 JSX를 사용합니다.</p> // 에러 발생
+);
+}
+```
+### 고쳐진 방식
+```
+unction App() {
+    return (
+        <>
+            <h1>Hello, JSX!</h1>
+            <p>React에서 JSX를 사용합니다.</p>
+        </>
+    );
+}
+```
