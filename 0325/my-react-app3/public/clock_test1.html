@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // 정기적으로시간을출력합니다.
+      setInterval(showClock, 500); // 매초마다실행되는함수입니다.
+      function showClock() {
+        const elem = (
+          <div>
+            <h1>안녕, 리액트!</h1>
+            <h2>현재 시간: {new Date().toLocaleTimeString()}</h2>
+          </div>
+        );
+        const root = document.getElementById("root");
+        ReactDOM.render(elem, root);
+      }
+    </script>
+  </body>
+</html>
