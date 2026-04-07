@@ -1,4 +1,4 @@
-# 5주차 수업내용
+# 5주차 수업내용.
 
 * 입력(parameter) => 함수(function) => 반환값(return)
 
